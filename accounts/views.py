@@ -14,7 +14,7 @@ def login_view(request):
             login(request, user)
             return redirect('home')
         else:
-            messages.error(request, '아이디 또는 비밀번호가 틀렸습니다.')
+            messages.error(request, '아이디 또는 올바르지 틀렸습니다.')
     return render(request, 'accounts/login.html')
 
 @login_required
